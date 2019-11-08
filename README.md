@@ -1,4 +1,4 @@
-# minimal-flask-react
+# huanan mortgage prediction
 
 Based on https://github.com/rwieruch/minimal-react-webpack-babel-setup
 
