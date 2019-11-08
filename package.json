@@ -1,0 +1,26 @@
+{
+  "scripts": {
+    "dev": "webpack --mode development",
+    "start": "webpack --mode development --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/preset-env": "^7.0.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.4",
+    "css-loader": "^3.2.0",
+    "style-loader": "^1.0.0",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2"
+  },
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0",
+    "reactstrap": "^8.1.1"
+  }
+}
