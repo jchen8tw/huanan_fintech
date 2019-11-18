@@ -61,8 +61,7 @@ class App extends Component {
           </Col>
         </Row>
         <Row>
-          <Col sm="4" />
-          <Col sm="4" style={{ textAlign: "center" }}>
+          <Col sm="6" style={{ textAlign: "center" }}>
             <Form>
               <FormGroup>
                 <Label for="exampleText">Input Condition</Label>
@@ -73,25 +72,26 @@ class App extends Component {
               </Button>
             </Form>
           </Col>
-          <Col sm="4" />
-        </Row>
-        <Row>
-          {this.state.result && <Table>
-            <thead>
-              <tr>
-                <th>項目</th>
-                <th>預測值</th>
-              </tr>
-            </thead>
-            <tbody>
-              {Object.keys(this.state.result).map(key => (
-                <tr>
-                  <th scope="row">{key}</th>
-                  <td>{this.state.result[key]}</td>
-                </tr>
-              ))}
-            </tbody>
-          </Table>}
+          <Col sm="6">
+            {this.state.result && (
+              <Table>
+                <thead>
+                  <tr>
+                    <th>項目</th>
+                    <th>預測值</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {Object.keys(this.state.result).map(key => (
+                    <tr>
+                      <th scope="row">{key}</th>
+                      <td>{this.state.result[key]}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </Table>
+            )}
+          </Col>
         </Row>
       </Container>
     );
