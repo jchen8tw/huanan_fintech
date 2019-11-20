@@ -82,12 +82,19 @@ class App extends Component {
                   </tr>
                 </thead>
                 <tbody>
-                  {Object.keys(this.state.result).map(key => (
-                    <tr>
-                      <th scope="row">{key}</th>
-                      <td>{this.state.result[key]}</td>
-                    </tr>
-                  ))}
+                  {Object.keys(this.state.result).map(key =>
+                    key == "interest_rate" ? (
+                      <tr>
+                        <th scope="row">{key}</th>
+                        <td style={{color:"red"}}>{this.state.result[key]}</td>
+                      </tr>
+                    ) : (
+                      <tr>
+                        <th scope="row">{key}</th>
+                        <td>{this.state.result[key]}</td>
+                      </tr>
+                    )
+                  )}
                 </tbody>
               </Table>
             )}
